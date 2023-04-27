@@ -1,10 +1,18 @@
 <!-- <app-server></app-server> -->
-<h1>{{title}} </h1> 
+<h1>{{title}} </h1>
 <button class="btn btn-primary mb-2" 
-[disabled]="!allowNewServer" 
->disabled</button>
-
+[disabled]="!allowNewServer">disabled</button>
 <p>{{allowNewServer}} Property binding in html tag ==> {{"allowNewServer"}}</p>
 <p [innerText]="allowNewServer">Property binding in html attribute </p>
-<button class="btn btn-primary" [disabled]="!allowNewServer"  (click)="onServerStatus" >server Active</button>
+<button class="btn btn-primary"
+ [disabled]="!allowNewServer" 
+ (click)="onCreateServer">server Active</button>
 <p>{{serverCreationStatus}}</p>
+<hr>
+<h4>passing and using data with event binding</h4>
+<hr>
+<label>Server Name</label>
+<input type="text" 
+class="form-control" 
+(input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
