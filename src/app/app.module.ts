@@ -9,8 +9,14 @@ import { ServersComponent } from './servers/servers.component';
 import { ServerComponent } from './server/server.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipesListComponent } from './recipes/recipes-list/recipes-list.component';
+import { RecipesDetailsComponent } from './recipes/recipes-details/recipes-details.component';
+import { RecipesItemsComponent } from './recipes/recipes-list/recipes-items/recipes-items.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 @NgModule({
-declarations: [AppComponent, ServersComponent, ServerComponent, SuccessAlertComponent, WarningAlertComponent,],
+declarations: [AppComponent, ServersComponent, ServerComponent, SuccessAlertComponent, WarningAlertComponent, RecipesComponent, RecipesListComponent, RecipesDetailsComponent, RecipesItemsComponent, ShoppingListComponent, ShoppingEditComponent,],
   imports: [
     BrowserModule, 
     AppRoutingModule, 
